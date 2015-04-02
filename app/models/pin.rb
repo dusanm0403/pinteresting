@@ -1,13 +1,7 @@
 class Pin < ActiveRecord::Base
+	Paperclip.options[:command_path] = 'C:/Program Files/ImageMagick-6.9.0-Q16'
 	belongs_to :user
 
-	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
-	# Validate content type
-  validates_attachment_content_type :image, :content_type => /\Aimage/
-
-  # Validate filename
-  validates_attachment_file_name :image, :matches => [/png\Z/, /jpe?g\Z/]
-
-  # Explicitly do not validate
-  do_not_validate_attachment_file_type :image
+	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 end
