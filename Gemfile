@@ -1,8 +1,7 @@
-source 'http://rubygems.org' #remove the 's' 
+source 'http://rubygems.org' 
 ruby '2.1.5'
 
 gem 'rails', '~> 4.1.8'
-gem 'rubygems-update', '~> 2.4.6'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -12,10 +11,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.2.3'
+gem 'paperclip', '~> 3.5'
 gem 'rake' , '~> 10.4.2'
-
+ 
 group :development, :test do
-	gem 'sqlite3', '~> 1.3.10'
+	gem 'sqlite3'
 	
 end
 
