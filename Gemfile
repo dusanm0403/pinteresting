@@ -15,6 +15,7 @@ gem 'rake' , '~> 10.4.2'
 
 group :development, :test do
 	gem 'sqlite3', '1.3.10'
+	
 end
 
 group :production do
