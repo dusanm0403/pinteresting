@@ -14,7 +14,7 @@ gem 'devise', '~> 3.2.3'
 gem 'rake' , '~> 10.4.2'
 
 group :development, :test do
-	gem 'sqlite3'
+	gem 'sqlite3', '1.3.10'
 	
 end
 
