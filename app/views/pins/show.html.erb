@@ -10,6 +10,7 @@
 <p><strong><%= @pin.user.email if @pin.user %></strong></p>
 <% if @pin.user == current_user %> 
 <%= link_to raw('<i class="fa fa-pencil-square-o"></i> Edit'), edit_pin_path(@pin) %>
+<%= link_to raw('<i class="fa fa-trash"></i> Delete'), @pin, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
 </div>
 </div>
