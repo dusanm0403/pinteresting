@@ -17,6 +17,7 @@ gem 'rake' , '~> 10.4.2'
 gem 'aws-sdk', '< 2.0'
 gem 'masonry-rails', '~> 0.2.0'
 gem 'coffee-script-source', '1.8.0'
+gem 'font-awesome-rails'
  
 group :development, :test do
 	gem 'sqlite3'
